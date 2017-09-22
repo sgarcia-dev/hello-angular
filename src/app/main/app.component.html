@@ -5,11 +5,4 @@
   </li>
 </ul>
 
-<div *ngIf="selectedHero">
-  <h1>Hero Details</h1>
-  <h3>{{selectedHero.name}}</h3>
-  <div>
-    <label>name: </label>
-    <input [(ngModel)]="selectedHero.name" placeholder="name">
-  </div>
-</div>
+<hero-detail [hero]="selectedHero"></hero-detail>
