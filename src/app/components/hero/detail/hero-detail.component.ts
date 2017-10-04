@@ -11,7 +11,7 @@ import { Hero } from '../hero.class';
     templateUrl: './hero-detail.template.html'
 })
 export class HeroDetailComponent implements OnInit {
-    hero: Hero;
+    @Input() hero: Hero;
 
     constructor(
         private heroService: HeroService,
